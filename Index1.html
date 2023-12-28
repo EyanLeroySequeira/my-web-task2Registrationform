@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>RegistrationForm</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+</head>
+
+<body>
+    <div class="welcome" id="welcome">
+        <div class="innerwelcome">
+
+            <h1
+                style="text-align:center;font-size:70px;color:rgb(244, 244, 24);font-family:Verdana, Geneva, Tahoma, sans-serif ;">
+
+                Evergreen University</h1> <br><br>
+            <h4 style="text-align:center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: bisque;">
+                Welcome to Evergreen University! <br>
+                <br>
+                Register with us to join our vibrant community.
+            </h4>
+            <div class="navbar">
+                <ul class="navbar-nav " id="registerbtn">
+                    <li class="nav-item">
+                        <a class="nav-link" id="registerlink"
+                            href="http://127.0.0.1:5500/Index1.html#registration"><strong>Register</strong></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <style>
+            .innerwelcome {
+                display: flex;
+                width: fit-content;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: column;
+
+
+            }
+
+            .navbar {
+                width: fit-content;
+                margin-top: 100px;
+                font-size: 30px;
+            }
+
+            #registerlink:hover {
+                background-color: rgb(184, 14, 184, 0.3);
+            }
+
+            #registerlink {
+                border-radius: 8px;
+                color: purple;
+                padding: 12px 30px;
+            }
+
+            #registerbtn {
+                border-radius: 8px;
+                border: none;
+                background-color: white;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .welcome {
+                background-image: linear-gradient(rgb(0, 106, 255, 0.2), rgb(98, 98, 243, 0.6)), url('https://wpvip.edutopia.org/wp-content/uploads/2022/10/shutterstock_1958383675-crop.jpg?w=2000&quality=85');
+                text-align: end;
+                background-size: cover;
+                padding: 80px 60px;
+                width: 100vw;
+                height: 100vh;
+                position: relative;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-end;
+                flex-direction: row;
+                overflow-x:none;
+
+            }
+
+
+            @media screen and (max-width:450px) and (min-width:200px) {
+                #welcome h1 {
+                    font-size: 40px !important;
+                    color: #3E187A !important;
+                    font-style: normal !important;
+                }
+
+                #welcome h4 {
+                    font-size: 20px !important;
+                    color: #284052 !important
+                }
+            }
+
+            @media screen and (max-width:650px) and (min-width:200px) {
+                #welcome .navbar {
+                    font-size: 20px !important;
+                    margin-top: 50px !important;
+                    right: 20px
+                }
+            }
+
+            @media screen and (min-width:1150px) {
+
+                #registration #card {
+                    font-size: 25px;
+                    gap: 5px;
+                }
+
+            }
+
+            @media screen and (max-width:1150px) and (min-width:350px) {
+                #registration #card {
+                    font-size: 25px;
+                    width: 70%;
+                    max-width: 600px;
+                    gap: 5px;
+                }
+
+
+            }
+
+
+            @media screen and (max-width:350px) and (min-width:250px) {
+                #registration #card {
+                    font-size: 14px;
+                    width: 30%;
+                    max-width: 350px;
+                    gap: 5px;
+                }
+
+                #registration .formbody {
+                    width: 100%;
+                    gap: 20px;
+                    padding: 30px;
+                    color: whitesmoke;
+                }
+
+            }
+        </style>
+        <script>
+            // function myfunction()
+            // // e.preventDefault();
+            // const element = document.getElementById('welcome');
+            // if (element.className == 'welcome') {
+            //     element.className = 'registration';
+            //     console.log("second function");
+            // }
+            // else {
+            //     element.className = 'welcome';
+            //     console.log("third function");
+            // }
+        </script>
+
+    </div>
+    <div class="registration" id="registration">
+        <div id="card">
+            <h4 class="formheading "> Registration Form</h4>
+            <form class="formbody " id="formbody" action="">
+                <div class='innerbody'>
+                    <label for="">Name </label>
+                    <span>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input class="input" type="text" id='name' placeholder="Enter Name" required>
+                    </span>
+                </div>
+                <div class="innerbody">
+                    <label for="">DOB</label>
+                    <span>
+                        <i class="fa fa-calendar-alt" aria-hidden="true"></i>
+                        <input class="input" type="date" id='username' placeholder="DD - MM - YYYY"  required>
+                </div>
+                <div class="innerbody">
+                    <span class="gender">
+                        <input  type="radio" name="gender" id="male" value="male"  required>
+                        <label for="male"> Male</label>
+                    </span>
+                    <span class="gender">
+                        <input  type="radio" name="gender" id="female"  required>
+                        <label for="female"> Female</label>
+                    </span>
+                    <span class="gender">
+                        <input  type="radio" name="gender" id='other'  required>
+                        <label for="other"> Other</label>
+                    </span>
+                </div>
+
+
+                <div class="innerbody">
+                    <label for="">Email</label>
+                    <span>
+                        <i class="fa fa-envelope-open    "></i>
+                        <input class="input" type="email" id="email" placeholder="Enter Email" required>
+                    </span>
+                </div>
+
+                <div class="innerbody">
+                    <label for="">Password</label>
+                    <span>
+                        <i class="fas fa-lock" aria-hidden="true"></i>
+                        <input class="input" type="password" id="PWord" placeholder="Password" minlength='5'
+                            maxlength="10" required>
+                    </span>
+                </div>
+
+                <div class="innerbody">
+                    <span id="checkpassword">
+                        <input class="checkbox" onclick="myPasswordChecker()" type="checkbox"> <label for="">
+                            Show Password</label>
+                    </span>
+                </div>
+                <style>
+                    input:focus {
+                        outline: none !important;
+                        /* border-color: #719ECE; */
+                        box-shadow: 0 0  0 2px purple;
+                    }
+
+                    .checkbox {
+                        height: 23px;
+                        width: 23px;
+                    }
+
+                    #checkpassword {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        flex-direction: row;
+                        gap: 20px;
+                    }
+                </style>
+                <script>
+                    function myPasswordChecker() {
+                        const elem = document.getElementById('PWord')
+                        if (elem.type === 'password') {
+                            elem.type = 'text';
+                        } else {
+                            elem.type = 'password'
+                        }
+
+                    }
+                </script>
+                <div class="innerbody">
+                    <label for="">Phone</label>
+                    <span>
+                        <i class="fas fa-phone    "></i>
+                        <input class="input" type="text" id='phone' placeholder="Enter Phone Number">
+                    </span>
+                </div>
+
+                <div class="innerbody">
+
+                    <label for="">Department</label>
+                    <span>
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                        <select  class="input" name="" id="" style="width:100%">
+
+                            <option value="">Select</option>
+                            <option value="">Computer Science Engineering</option>
+                            <option value="">Artificial Intelligence and Machine Learning</option>
+                            <option value="">Electronics and Communication</option>
+
+                        </select>
+
+                    </span>
+                </div>
+                <div class="formbutton">
+                    <button type="submit" onclick="formfunction()" id="formbutton">Submit</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    function formfunction(){
+     document.getElementsByClassName('input').innerHTML=true;
+
+    }
+    const formbody = document.getElementById("formbody");
+    formbody.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const button = document.getElementById('formbutton');
+        button.className = 'buttonOutline';
+        button.style.border = '2px solid darkblue';
+        // console.log("Funtion works");
+
+        setTimeout((e) => {
+            const registers = document.getElementById('registration')
+            registers.innerHTML = `<h1 id='formsubmit'> Your Respose is submitted successfully !</h1>`;
+        }, 2000);
+    });
+
+</script>
+
+</html>
+<style>
+    bodY{
+        width:100vw;
+        overflow-x:hidden;
+    }
+    #buttonOutline {
+        border-color: hsl(210, 78%, 73%);
+        background: white;
+        transform: scale(1.1);
+        box-shadow: 2px 3px 3px 0 #007bff;
+    }
+
+    #formsubmit {
+        height: 100%;
+        width: 100%;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        color: black;
+        text-align: center;
+    }
+
+    @font-face {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        src: url(sansation_light.woff);
+        font-weight: lighter;
+    }
+
+    * {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+
+
+    .registration {
+        background: linear-gradient(#20A4F3, #182B3A);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        min-height: 100vh;
+        padding: 60px 0;
+        
+        /* position: relative; */
+
+    }
+
+    div#card {
+        background-color: #ecf6fd;
+        font-size: 18px;
+        height: fit-content;
+        max-height: 900px;
+        width: 500px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        border-radius: 16px;
+        gap: 20px;
+        overflow-x:hidden;
+    
+
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 100px;
+        background-color: ghostwhite;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #994ECC;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: darkgray;
+    }
+
+    .formheading {
+        width: 100%;
+        font-size: 35px;
+        background: linear-gradient(#994ECC, #3E187A);
+        text-align: center;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        padding: 40px 30px;
+        position: sticky;
+        top: 0;
+    }
+
+    .formbody {
+        width: 100%;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 30px;
+        color: whitesmoke;
+        /* overflow:scroll; */
+        /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+
+    }
+
+
+    .innerbody {
+        display: flex;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .innerbody i {
+        box-sizing: border-box;
+        border: 2px solid rgb(181, 179, 179);
+        padding: 12px 14px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        color: gray;
+    }
+
+    .innerbody label {
+        width: 100px;
+        color: gray;
+
+    }
+
+    .innerbody select {
+        border-end-end-radius: 8px;
+        border-top-right-radius: 8px;
+
+    }
+
+    .innerbody span {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        width: 100%;
+
+    }
+
+    .formbody .input {
+        width: 100%;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border: none;
+        /* box-shadow: 0 0 0 2px purple; */
+        flex-wrap: wrap;
+
+    }
+
+    input[type="radio"] {
+        accent-color: #00f;
+        width: 20px;
+        height: 20px;
+
+    }
+
+    .formbutton button {
+        width: 250px;
+        /* flex-wrap: wrap; */
+        height: 40px;
+        margin-top: 20px;
+        background-color: purple;
+        color: white;
+        font-size: 20px;
+        outline: none;
+        border: none;
+        border-radius: 16px;
+        margin-bottom: 20px;
+    }
+
+    span.gender {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .responseSubmit {
+        color: black;
+        font-size: 30px;
+    }
+</style>
